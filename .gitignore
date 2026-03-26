@@ -1,0 +1,7 @@
+.env
+.vscode/
+.idea/
+__pycache__/
+*.log
+logs_thinking/
+app.log

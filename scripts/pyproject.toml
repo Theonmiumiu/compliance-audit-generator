@@ -1,0 +1,26 @@
+[project]
+name = "compliance-audit-generator"
+version = "0.1.0"
+description = "合规检查工作底稿自动生成工具"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "json5>=0.13.0",
+    "langchain-core>=1.2.17",
+    "langchain-openai>=1.1.10",
+    "numpy>=2.4.2",
+    "openai>=2.26.0",
+    "openpyxl>=3.1.5",
+    "pandas>=2.2.0",
+    "psycopg2>=2.9.11",
+    "requests>=2.32.5",
+    "python-docx>=1.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
